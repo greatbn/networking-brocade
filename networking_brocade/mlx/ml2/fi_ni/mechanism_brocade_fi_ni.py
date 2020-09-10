@@ -20,7 +20,7 @@ from networking_brocade._i18n import _
 from networking_brocade._i18n import _LE
 from networking_brocade._i18n import _LI
 from neutron.plugins.ml2.common import exceptions as ml2_exc
-from neutron.plugins.ml2 import driver_api
+from neutron_lib.plugins.ml2 import api as driver_api
 from oslo_log import log as logging
 from oslo_utils import importutils
 

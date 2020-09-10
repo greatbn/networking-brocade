@@ -18,7 +18,7 @@ from novaclient.v1_1 import client as novaclient
 from neutron.agent.l3 import agent as l3_agent
 from neutron.agent.l3 import router_info
 from neutron.agent import l3_agent as entry
-from neutron.common import constants as l3_constants
+from neutron_lib import constants as l3_constants
 
 from networking_brocade.vyatta.common import config as vyatta_config
 from networking_brocade.vyatta.common import exceptions as v_exc

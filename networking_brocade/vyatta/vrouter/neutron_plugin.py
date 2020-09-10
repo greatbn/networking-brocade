@@ -22,8 +22,8 @@ from sqlalchemy.orm import exc
 from neutron.api.rpc.agentnotifiers import l3_rpc_agent_api
 from neutron.api.rpc.handlers import l3_rpc
 from neutron.api.v2 import attributes
-from neutron.common import constants as l3_constants
-from neutron.common import exceptions as q_exc
+from neutron_lib import constants as l3_constants
+from neutron_lib import exceptions as q_exc
 from neutron.common import rpc as n_rpc
 from neutron.common import topics
 from neutron.db import common_db_mixin
@@ -36,7 +36,7 @@ from neutron.db import models_v2
 from neutron.extensions import l3
 from neutron.extensions import portsecurity as psec
 from neutron.i18n import _LE
-from neutron.plugins.common import constants
+from neutron_lib import constants
 
 from networking_brocade.vyatta.common import config
 from networking_brocade.vyatta.common import exceptions as v_exc

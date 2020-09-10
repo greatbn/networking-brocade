@@ -22,12 +22,12 @@
 """Brocade specific database schema/model."""
 import sqlalchemy as sa
 
-from neutron.db import model_base
+from neutron_lib.db import model_base
 from neutron.db import models_v2
 
 
-class ML2_BrocadeNetwork(model_base.BASEV2, models_v2.HasId,
-                         models_v2.HasTenant):
+class ML2_BrocadeNetwork(model_base.BASEV2, model_base.HasId,
+                         model_base.HasProject):
 
     """Schema for brocade network."""
 
@@ -36,8 +36,8 @@ class ML2_BrocadeNetwork(model_base.BASEV2, models_v2.HasId,
     network_type = sa.Column(sa.String(10))
 
 
-class ML2_BrocadePort(model_base.BASEV2, models_v2.HasId,
-                      models_v2.HasTenant):
+class ML2_BrocadePort(model_base.BASEV2, model_base.HasId,
+                      model_base.HasProject):
 
     """Schema for brocade port."""
 
@@ -50,8 +50,8 @@ class ML2_BrocadePort(model_base.BASEV2, models_v2.HasId,
     host = sa.Column(sa.String(255))
 
 
-class ML2_BrocadeSvi(model_base.BASEV2, models_v2.HasId,
-                     models_v2.HasTenant):
+class ML2_BrocadeSvi(model_base.BASEV2, model_base.HasId,
+                     model_base.HasProject):
 
     """schema for brocade svi """
     svi_id = sa.Column(sa.String(36), primary_key=True)

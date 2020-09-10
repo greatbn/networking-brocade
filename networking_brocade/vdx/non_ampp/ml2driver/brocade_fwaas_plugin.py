@@ -21,8 +21,8 @@ from networking_brocade.vdx.non_ampp.ml2driver import\
 from networking_brocade.vdx.non_ampp.ml2driver import fwaas_plugin as plugin
 from networking_brocade.vdx.non_ampp.ml2driver import utils
 from neutron import manager
-from neutron.plugins.common import constants as const
-from neutron.plugins.common import constants as plugin_constants
+from neutron_lib import constants as const
+from neutron_lib import constants as plugin_constants
 from neutron.plugins.ml2.drivers.brocade.db import models as brocade_db
 import neutron_fwaas
 from neutron_fwaas.extensions import firewall as fw_ext

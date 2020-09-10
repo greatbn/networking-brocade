@@ -32,7 +32,7 @@ from networking_brocade._i18n import _LW
 from networking_brocade.vdx.non_ampp.ml2driver import utils
 from networking_brocade.vdx.non_ampp.ml2driver.nos import(
     nctemplates as template)
-from neutron.common import exceptions
+from neutron_lib import exceptions
 from oslo_log import log as logging
 from oslo_utils import excutils
 import six

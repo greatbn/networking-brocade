@@ -53,7 +53,8 @@ def connect_setup_commands(vrouter, iface, svc, conn, resources):
         if need_create:
             batch.extend(esp_setup_commands(conn, esp_name))
 
-        link_id = [uuid.UUID(x).get_hex() for x in svc['id'], conn['id']]
+        link_id = [uuid.UUID(x).get_hex() for x in svc['id']]
+        link_id.append(conn['id'])
         link_id.insert(0, 'os-id')
         link_id = ':'.join(link_id)
         remote_peer = conn['peer_address']

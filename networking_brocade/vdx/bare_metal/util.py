@@ -15,7 +15,7 @@
 
 from neutron.extensions import portbindings
 from neutron.plugins.ml2.common import exceptions as ml2_exc
-from neutron.plugins.ml2 import driver_api
+from neutron_lib.plugins.ml2 import api as driver_api
 import oslo_i18n
 from oslo_log import helpers as log_helpers
 from oslo_log import log as logging

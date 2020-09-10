@@ -20,8 +20,8 @@ from networking_brocade._i18n import _
 from networking_brocade._i18n import _LE
 from networking_brocade._i18n import _LI
 from networking_brocade.vdx.db import models as brocade_db
-from neutron.plugins.common import constants as p_const
-from neutron.plugins.ml2 import driver_api
+from neutron_lib import constants as p_const
+from neutron_lib.plugins.ml2 import api as driver_api
 from oslo_config import cfg
 from oslo_log import log as logging
 from oslo_utils import importutils

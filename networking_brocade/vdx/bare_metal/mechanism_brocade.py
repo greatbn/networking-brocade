@@ -21,9 +21,9 @@ from networking_brocade._i18n import _LE
 from networking_brocade._i18n import _LI
 from networking_brocade.vdx.bare_metal import util as baremetal_util
 from networking_brocade.vdx.non_ampp.ml2driver.nos import nosdriver as driver
-from neutron.common import constants as n_const
+from neutron_lib import constants as n_const
 from neutron.extensions import portbindings
-from neutron.plugins.ml2 import driver_api as api
+from neutron_lib.plugins.ml2 import api
 from oslo_config import cfg
 from oslo_log import helpers as log_helpers
 try:

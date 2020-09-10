@@ -22,7 +22,7 @@ from networking_brocade._i18n import _LE
 from networking_brocade._i18n import _LI
 from networking_brocade.vdx.db import models as brocade_db
 from networking_brocade.vdx.ml2driver.nos import nosdriver as driver
-from neutron.common import constants as l3_constants
+from neutron_lib import constants as l3_constants
 from neutron.plugins.ml2 import db
 from neutron.services.l3_router import l3_router_plugin as router
 from oslo_config import cfg

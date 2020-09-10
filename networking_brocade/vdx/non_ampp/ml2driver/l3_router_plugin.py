@@ -26,12 +26,12 @@ from networking_brocade.vdx.db import models as brocade_db
 from networking_brocade.vdx.non_ampp.ml2driver.nos import nosdriver as driver
 from networking_brocade.vdx.non_ampp.ml2driver import utils
 from neutron.api.v2 import attributes
-from neutron.common import constants as l3_constants
+from neutron_lib import constants as l3_constants
 from neutron.common import utils as neutron_utils
 from neutron.db import models_v2
 from neutron.extensions import extraroute
 from neutron import manager
-from neutron.plugins.common import constants as plugin_constants
+from neutron_lib import constants as plugin_constants
 from neutron.services.l3_router import l3_router_plugin as router
 from oslo_log import log as logging
 from oslo_utils import excutils
